@@ -1,5 +1,5 @@
 
-
+/*
 var config = {
     apiKey: "AIzaSyDMYyKQy0Hp6rJtwqVzjPqP1oOZcquTGGg",
     authDomain: "fir-homework-ebc54.firebaseapp.com",
@@ -11,7 +11,7 @@ var config = {
   firebase.initializeApp(config);
 
 var database = firebase.database();
-
+*/
 $("#submit").on("click", function(){
 
     var trainName = $("#trainName").val().trim();
@@ -19,7 +19,7 @@ $("#submit").on("click", function(){
     var destination = $("#destination").val().trim();
     var frequency = $("#frequency").val().trim();
     $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + lineName + "</td><td>"+ destination + "</td><td>"+ frequency + "</td><td>");
-
+/*
     var newInput = {
         name:  trainName,
         line: lineName,
@@ -28,7 +28,7 @@ $("#submit").on("click", function(){
     }
 
     database.push(newInput);
-
+*/
 
 
     $("#trainName").val("");
